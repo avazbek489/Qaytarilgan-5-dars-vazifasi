@@ -1,0 +1,257 @@
+@import "./fonts.css";
+@import './global.css';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1111px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER PART */
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 27px;
+  margin-bottom: 64px;
+}
+
+.head-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.head-right a {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #333136;
+}
+
+/* MAIN PART */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e7816b;
+  height: 480px;
+  border-radius: 12px;
+  padding: 95px;
+  background-image: url(../images/home/desktop/bg-pattern-hero-home.svg);
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 164px;
+}
+
+.main-left h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 48px;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.main-left p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.main-right h5 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 11px;
+  border-bottom: 4px solid white;
+}
+
+.email {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  border-bottom: 4px solid white;
+}
+
+.email p,
+.phone,
+.message {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.email input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+.email input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #e7816b;
+}
+
+.main-right .message {
+  margin-bottom: 75px;
+}
+
+.main-right button {
+  display: inline-block;
+  background: #ffffff;
+  padding: 20px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: #e7816b;
+}
+
+/* SECTION CONTAINER PART */
+.section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 113px;
+}
+
+.section-mine1,
+.section-mine2,
+.section-mine3 {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 25px 40px;
+  border-radius: 8px;
+}
+
+.section-mine1 img,
+.section-mine2 img,
+.section-mine3 img {
+  width: 56px;
+  height: 56px;
+}
+
+.section-mine1 h5,
+.section-mine2 h5,
+.section-mine3 h5 {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #333136;
+  margin: 20px 0;
+}
+
+.section-mine1 button,
+.section-mine2 button,
+.section-mine3 button {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #e7816b;
+  text-transform: uppercase;
+  border: 2px solid #e7816b;
+  padding: 13px 40px;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+/* FOOTER PART */
+.footer-container {
+  background-color: #333136;
+  color: #ffffff;
+  padding: 80px 0;
+}
+
+.foot-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.foot-left {
+  display: flex;
+  align-items: center;
+}
+
+.foot-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.foot-right a {
+  font-family: Jost;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* FOOTER-BOTTOM */
+.foot-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-left ul,
+.footer-center ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-left a,
+.footer-center a {
+  font-family: Jost;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.footer-right a {
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.footer-right img {
+  width: 24px;
+  height: 24px;
+}

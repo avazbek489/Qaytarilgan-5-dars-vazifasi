@@ -1,0 +1,193 @@
+@import "../css/fonts.css";
+@import "../css/global.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* HEADER QISMI */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 64px;
+  margin-bottom: 64px;
+}
+
+.head-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+}
+
+.head-right a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  letter-spacing: 2px;
+  color: #333136;
+}
+
+/* MAIN 1 QISMI */
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
+}
+
+.main-picture {
+  width: 280px;
+}
+
+.main-picture h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333136;
+  margin-bottom: 16px;
+}
+
+.main-picture p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #7b7b7b;
+}
+
+/* MAIN 2 QISMI */
+.picture-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 64px 0;
+}
+
+.picture-link {
+  text-align: center;
+}
+
+.picture-link h4 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333136;
+  margin-bottom: 16px;
+}
+
+.picture-link p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #7b7b7b;
+}
+
+/* DESIGN QISMI */
+.design-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 64px 0;
+}
+
+.design img {
+  width: 541px;
+  height: 308px;
+}
+
+/* ABOUT QISMI */
+.about {
+  margin: 64px 0;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-left {
+  width: 60%;
+}
+
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-left h4 {
+  font-size: 36px;
+  color: #333136;
+}
+
+.about-left p {
+  font-size: 15px;
+  line-height: 25px;
+  color: #7b7b7b;
+}
+
+.about-right button {
+  background: #f8f8f8;
+  border: none;
+  padding: 18px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333136;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* FOOTER QISMI */
+.footer-container {
+  padding: 56px 0;
+  text-align: center;
+}
+
+.foot-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 56px;
+}
+
+.foot-left ul,
+.footer-center ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.foot-left a,
+.footer-center a {
+  font-size: 14px;
+  line-height: 20px;
+  color: #7b7b7b;
+}
+
+.foot-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+
+.footer-right a {
+  margin-left: 15px;
+}
