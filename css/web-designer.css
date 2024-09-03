@@ -1,21 +1,6 @@
 @import "../css/fonts.css";
 @import "../css/global.css";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Jost", sans-serif;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
 a {
   transition: color 0.3s, transform 0.3s;
 }
@@ -36,29 +21,18 @@ button:hover {
   transform: scale(1.1);
 }
 
-button:hover{
-background-color: #f0ad9c;
+button:hover {
+  background-color: #f0ad9c;
 }
 
-button:active{
- background-color: rgb(235, 195, 195); 
-  
-}
-img:hover {
-  animation: bounce 1s infinite;
+button:active {
+  background-color: rgb(235, 195, 195);
+
 }
 
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-  }
-  40% {
-      transform: translateY(-30px);
-  }
-  60% {
-      transform: translateY(-15px);
-  }
-}
+
+
+
 
 
 a {
@@ -75,7 +49,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding-top: 64px;
-  margin-bottom: 64px;
+  margin-bottom: 20px;
 }
 
 .head-right ul {
@@ -116,19 +90,20 @@ li {
   line-height: 25px;
   color: #7b7b7b;
 }
+
 /* DESIGN QISMI */
-.design{
+.design {
   margin-top: 160px;
   margin-bottom: 160px;
 }
 
-.design__container{
+.design__container {
   display: flex;
   align-items: center;
-gap: 30px;
+  gap: 30px;
 }
 
-.des-right{
+.des-right {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -136,39 +111,44 @@ gap: 30px;
 }
 
 /* MAIN QISMI */
-.main{
+.main {
   margin-top: 32px;
   margin-bottom: 160px;
 }
 
-.main__container{
+.main__container {
   display: flex;
   align-items: center;
   gap: 30px;
 }
 
-.main_tittle{
+.main_tittle {
   background-color: #FDF3F0;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 32px;
 }
 
-.main_tittle h4{
-font-size: 20px;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 5px;
-color:  #E7816B;
-margin-bottom: 16px;
+.main_tittle h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 5px;
+  color: #E7816B;
+  margin-bottom: 16px;
 }
 
-.main_tittle{
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-color: #333136;
+.main-left {
+  text-align: left;
 }
+
+.main_tittle {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333136;
+}
+
 /* ABOUT QISMI */
 .about {
   margin: 64px 0;
@@ -244,6 +224,445 @@ color: #333136;
   padding-top: 40px;
 }
 
-.footer-right a {
-  margin-left: 15px;
+/* RESPONSIVE DIZAYN BOLIMI */
+
+.bar-label {
+  display: none;
+}
+
+.nav ul {
+  transition: all 0.1s;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    display: grid;
+    place-items: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 117px;
+    text-align: center;
+  }
+
+  .nav a{
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+
+  }
+
+  .main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-left {
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  .main-left button {
+    padding: 16px 25px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.68px;
+    letter-spacing: 1px;
+    color: #333136;
+  }
+
+  .main-right img {
+    width: 284px;
+    height: 300px;
+  }
+
+  .main-container h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+
+  .design__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .design__container img {
+    width: 650px;
+    height: 300px;
+  }
+
+  .des-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .icon-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .icon-center {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .icon-right {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .about-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .footer-left a {
+    color: #7b7b7b;
+
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .header {
+    display: grid;
+    place-items: center;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 117px;
+    text-align: center;
+  }
+
+  .nav {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 20px;
+
+  }
+
+  .main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main-left {
+    text-align: center;
+    margin-bottom: 69px;
+  }
+
+  .main-left button {
+    padding: 16px 25px;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21.68px;
+    letter-spacing: 1px;
+    color: #333136;
+  }
+
+  .main-right img {
+    width: 284px;
+    height: 300px;
+  }
+
+  .main-container h1 {
+    margin-bottom: 8px;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 48px;
+  }
+
+  .design__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .design__container img {
+    width: 650px;
+    height: 300px;
+  }
+
+  .des-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .icon-left {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .icon-center {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .icon-right {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 48px;
+  }
+
+  .about-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .footer-left a {
+    color: #7b7b7b;
+
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .bar-hide-show {
+    display: block;
+  }
+
+  .main-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-right img {
+    width: 220px;
+    height: 250px;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 36px;
+  }
+
+  .design__container img {
+    width: 327px;
+    height: 250px;
+  }
+
+
+  .nav a {
+    display: block;
+  }
+
+  .bar-label {
+    display: block;
+  }
+
+  .bar-label:checked+.nav a {
+    display: block;
+  }
+
+
+  .nav {
+    position: relative;
+  }
+
+  .nav ul {
+    background-color: #EDF7FA;
+    flex-direction: column;
+    position: absolute;
+    width: 40vw;
+    right: -140px;
+    bottom: 2px;
+    top: 15px;
+    justify-content: center;
+    border-radius: 5px;
+    height: 30vh;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    background-color: rgba(214, 212, 212, 0.5);
+  }
+
+
+
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+  }
+
+  .icon-left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon__tittle {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon-center {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .icon-right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    text-align: center;
+  }
+
+  .about-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-right {
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-left p {
+    width: 279px;
+    height: 75px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #FFFFFF;
+  }
+
+  .about-right button {
+    position: absolute;
+    left: -35px;
+    width: 152px;
+    height: 56px;
+    font-size: 10px;
+    font-weight: 700;
+    color: #333136;
+    padding: 18px 40px;
+  }
+
+
+  .footer-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .foot-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  hr {
+    width: 327px;
+    height: 1px;
+    opacity: 0.1px;
+
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .foot-bottom {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
 }
