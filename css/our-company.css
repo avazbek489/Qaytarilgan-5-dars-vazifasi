@@ -1,8 +1,6 @@
-@import './global.css'
+@import "./global.css";
 
-a {
-    transition: color 0.3s, transform 0.3s;
-  }
+
   
   a:hover {
     color: #004d40;

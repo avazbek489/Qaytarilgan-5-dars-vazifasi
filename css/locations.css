@@ -1,4 +1,5 @@
 @import "./fonts.css";
+@import "./global.css";
 
 * {
   margin: 0;
@@ -183,14 +184,9 @@ img:hover {
 
 /* COMTACT US QISMI */
 .contact-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
   border-radius: 8px;
@@ -512,7 +508,7 @@ hr {
     text-align: center;
   }
 
-  .nav a{
+  .nav a {
     font-size: 10px;
     font-weight: 500;
     line-height: 20px;
@@ -623,20 +619,201 @@ hr {
   }
 }
 
-@media (max-width: 689px) {
-.contact-container{
-  display: flex;
-  flex-direction: column;
-  gap: 31px;
+@media (max-width: 690px) {
+
+  .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .foot-bottom {
+    display: flex;
+    gap: 32px;
+  }
+
+  .foot-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
 }
 
-.map-section img {
-  width: 689px;
-height: 326px;
+.bar-label {
+  display: none;
 }
- }
 
+.nav ul {
+  transition: all 0.1s;
+}
 
 @media (max-width: 576px) {
- 
+
+  .flow {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .bar-hide-show {
+    display: block;
+  }
+
+  .nav a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 2px;
+    color: #333136;
+  }
+
+  .main-container {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-right img {
+    width: 220px;
+    height: 250px;
+  }
+
+  .design__container img {
+    width: 327px;
+    height: 250px;
+  }
+
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+
+  .bar-label {
+    display: block;
+  }
+
+  .bar-label:checked+.nav a {
+    display: block;
+  }
+
+
+
+  .nav {
+    position: relative;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    position: absolute;
+    width: 50vw;
+    right: -140px;
+    bottom: 2px;
+    top: 15px;
+    justify-content: center;
+    border-radius: 5px;
+    height: 40vh;
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    background-color: rgba(214, 212, 212, 0.5);
+  }
+
+
+  .map-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .drop-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .main-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact--top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .contact--bot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .foot-top {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+
+  .foot-bottom {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 }
