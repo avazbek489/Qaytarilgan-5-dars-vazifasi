@@ -234,6 +234,10 @@ li {
   transition: all 0.1s;
 }
 
+.icon-svg{
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .header {
     display: grid;

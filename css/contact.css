@@ -286,6 +286,7 @@ hr{
   transition: all 0.1s;
 }
 
+
 @media (max-width: 689px) {
   .main-container {
     display: flex;
@@ -419,6 +420,7 @@ hr{
   height: 38px;
   border-bottom: 1px solid #ffffff;
 }
+
 
 .hero--form__in4 {
   width: 500px;
